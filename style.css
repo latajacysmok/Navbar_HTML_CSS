@@ -1,0 +1,72 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+	background-color: #292929;
+}
+
+header
+{
+	content: '';
+	display: table;
+	clear: both;
+	background-color: #03A9F4;
+	width: 100%
+}
+
+.menu
+{
+	width: 900px;
+	margin: 0 auto
+}
+
+.logo
+{
+	margin-left: 15%;
+	width: 90px;
+	float: left;
+	padding: 8px;
+}
+
+
+nav ul
+{
+	padding: 0;
+	margin: 0;
+	margin-left: 30%;
+}
+
+nav ul li
+{
+	list-style: none;
+	float: left;
+	margin-top: 15px;
+	margin-left: 75px;
+	padding: 12px 0;
+	position: relative;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #444;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+nav a::before
+{
+	content: '';
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: #444;
+	top: 0;
+	position: absolute;
+}
+
+nav a:hover::before
+{
+	width: 100%;
+}
